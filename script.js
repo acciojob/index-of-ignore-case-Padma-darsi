@@ -1,13 +1,12 @@
 function indexOfIgnoreCase(s1, s2) {
   // write your code here
+// Convert both strings to lowercase for case-insensitive comparison
+  let lowerS1 = s1.toLowerCase();
+  let lowerS2 = s2.toLowerCase();
+  
+  // Use indexOf to find the index of the substring in the main string
+  return lowerS1.indexOf(lowerS2);
 
-	function indexOfIgnoreCase(str, subStr) {
-  // Convert both the string and the substring to lowercase
-  let lowerStr = str.toLowerCase();
-  let lowerSubStr = subStr.toLowerCase();
-
-  // Use the indexOf method to find the first occurrence of subStr in str
-  return lowerStr.indexOf(lowerSubStr);
 }
 
 // Examples
